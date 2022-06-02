@@ -245,6 +245,24 @@ body {
     justify-content: space-between;
 }
 
+.for-img {
+    /* position: absolute; */
+    width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 55px;
+}
+
+.specifics-icon {
+    width: 70px;
+    height: 70px;
+}
+
 .specifics-item {
     width: 270px;
 }
