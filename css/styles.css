@@ -483,27 +483,26 @@ body {
 
 /* --------------------------FOOTER----------------------------------- */
 
-/* 
-.contact-wrap .container {
-    display: flex;
-} */
-
 .footer {
     background-color: #2f303a;
     padding: 60px 0;
 }
 
-.footer .join {
+.footer .container {
     display: flex;
+    align-items: center;
 }
 
 .footer-logo {
+    display: block;
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196f3;
+
+    margin-bottom: var(--typical-margin);
 }
 
 .footer-studio {
@@ -532,11 +531,14 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    /* margin-top: 9px; */
     display: block;
 }
 
 /* ---------------------------------JOIN---------------------------------------- */
+
+.join {
+    margin-left: 70px;
+}
 
 .join-title {
     font-family: "Roboto";
@@ -547,10 +549,14 @@ body {
     text-transform: uppercase;
 
     color: var(--second-title-color);
+
+    /* margin-bottom: 20px; */
 }
 
 .join-list {
     display: flex;
+    margin-top: 20px;
+
     /* align-items: center; */
     /* justify-content: center; */
 }
