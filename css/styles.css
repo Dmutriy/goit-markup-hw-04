@@ -83,8 +83,8 @@ body {
 /* --------------------------HEADER------------------------------------ */
 
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    /* padding-top: 24px;
+    padding-bottom: 25px; */
 
     border-bottom: 1px solid var(--border-solid-color);
     background: var(--mine-br-color);
@@ -112,14 +112,15 @@ body {
     align-items: center;
 }
 
-.header-list,
-.contacts {
+.header-list {
     display: flex;
     align-items: center;
 }
 
 .contacts {
+    display: flex;
     margin-left: auto;
+    align-items: baseline;
 }
 
 .header-list li:not(:last-child),
@@ -153,6 +154,9 @@ body {
 
 .header-mail,
 .header-tel {
+    display: flex;
+    align-items: center;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
@@ -170,18 +174,13 @@ body {
     color: var(--accent-color);
 }
 
-.header-contacts-item .envelope,
-.header-contacts-item .smartphone {
-    margin-right: 10px;
-}
-
 .header-contacts-item .header-icon {
+    margin-right: 10px;
     fill: currentColor;
 }
 
 .header-contacts-item:hover .header-icon,
 .header-contacts-item:focus .header-icon {
-    /* fill: var(--accent-color); */
     fill: currentColor;
 }
 
@@ -252,7 +251,6 @@ body {
 }
 
 .for-img {
-    width: 270px;
     height: 120px;
     display: flex;
     align-items: center;
@@ -260,7 +258,7 @@ body {
 
     background: #f5f4fa;
     border-radius: 4px;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
 }
 
 .specifics-icon {
@@ -459,11 +457,6 @@ body {
 
     width: 170px;
     height: 92px;
-    left: 615px;
-    top: 2493px;
-
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
 }
 
 .customers-link {
@@ -472,73 +465,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
 }
+
 .customers-icon {
     fill: #afb1b8;
 }
 
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
     border: 1px solid var(--btn-br-color);
 }
 
 .customers-link:hover .customers-icon,
 .customers-link:focus .customers-icon {
     fill: var(--btn-br-color);
-}
-
-/* --------------------------FOOTER----------------------------------- */
-
-.footer {
-    background-color: #2f303a;
-    padding: 60px 0;
-}
-
-.footer .container {
-    display: flex;
-    align-items: center;
-}
-
-.footer-logo {
-    display: block;
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196f3;
-
-    margin-bottom: var(--typical-margin);
-}
-
-.footer-studio {
-    color: #ffffff;
-}
-
-.footer-adres {
-    font-style: normal;
-    margin-top: 20px;
-    /* outline: 1px solid pink; */
-}
-
-.footer-list .footer-item + .footer-item {
-    margin-top: 9px;
-}
-
-.footer-addres-link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-}
-
-.footer-link,
-.footer-tel {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    display: block;
 }
 
 /* ---------------------------------JOIN---------------------------------------- */
@@ -595,6 +538,62 @@ body {
 .join-link:hover .join-icon,
 .join-link:focus .join-icon {
     fill: var(--btn-color);
+}
+
+/* --------------------------FOOTER----------------------------------- */
+
+.footer {
+    background-color: #2f303a;
+    padding: 60px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-logo {
+    display: block;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #2196f3;
+
+    margin-bottom: var(--typical-margin);
+}
+
+.footer-studio {
+    color: #ffffff;
+}
+
+.footer-adres {
+    font-style: normal;
+    margin-top: 20px;
+    /* outline: 1px solid pink; */
+}
+
+.footer-list .footer-item + .footer-item {
+    margin-top: 9px;
+}
+
+.footer-addres-link {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.footer-link,
+.footer-tel {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
 }
 
 /* --------------------------portfolio.html----------------------------------- */
