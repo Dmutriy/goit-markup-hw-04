@@ -170,8 +170,13 @@ body {
     color: var(--accent-color);
 }
 
-.header-contacts-item .envelope {
+.header-contacts-item .envelope,
+.header-contacts-item .smartphone {
     margin-right: 10px;
+}
+
+.header-contacts-item .header-icon {
+    fill: currentColor;
 }
 
 .header-contacts-item:hover .header-icon,
@@ -223,6 +228,7 @@ body {
     border-radius: 4px;
     margin: 0 auto;
     display: block;
+    border: none;
 }
 
 .hero-btn:hover,
@@ -245,7 +251,6 @@ body {
 }
 
 .for-img {
-    /* position: absolute; */
     width: 270px;
     height: 120px;
     display: flex;
@@ -525,6 +530,7 @@ body {
     letter-spacing: 0.03em;
     color: #ffffff;
 }
+
 .footer-link,
 .footer-tel {
     font-size: 14px;
@@ -549,16 +555,11 @@ body {
     text-transform: uppercase;
 
     color: var(--second-title-color);
-
-    /* margin-bottom: 20px; */
 }
 
 .join-list {
     display: flex;
     margin-top: 20px;
-
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 .join-item {
@@ -574,7 +575,6 @@ body {
 .join-link {
     width: 100%;
     height: 100%;
-    /* background-color: var(--btn-color); */
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     display: flex;
@@ -619,7 +619,6 @@ body {
 }
 
 .filter-btn {
-    /* min-width: 44px; */
     padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
