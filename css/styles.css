@@ -181,7 +181,8 @@ body {
 
 .header-contacts-item:hover .header-icon,
 .header-contacts-item:focus .header-icon {
-    fill: var(--accent-color);
+    /* fill: var(--accent-color); */
+    fill: currentColor;
 }
 
 /* --------------------------HERO----------------------------------- */
